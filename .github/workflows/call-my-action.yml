@@ -21,7 +21,7 @@ jobs:
 
       - name: test-the-action
         id : action-checker
-        uses :  ./HelloAction
+        uses :  ./hello-world-docker-action
         with :
           who-to-greet: ${{ inputs.who-to-greet }}
       - name: show output
